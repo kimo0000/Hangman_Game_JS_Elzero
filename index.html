@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game JS Elzero</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="allWords.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d575fe1d69.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h3>Hangman Game</h3>
+      <!-- <div class="msg"></div> -->
+      <h3 class="hint">Word Hint: <span></span></h3>
+    </header>
+    <div class="wrapper">
+      <div class="hangman">
+        <div class="draw">
+          <div class="stand">
+            <div class="hope"></div>
+            <div class="man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content_letters">
+        <div class="letters"></div>
+        <div class="letter_guess"></div>
+      </div>
+    </div>
+    <audio id="success" src="audios/success-1-6297.mp3" preload="auto"></audio>
+    <audio id="fail" src="audios/fail-144746.mp3" preload="auto"></audio>
+  </body>
+</html>
